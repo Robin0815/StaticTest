@@ -1,0 +1,35 @@
+body{ color:lightgreen;
+    background: magenta;
+    -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite;
+    animation: background 1s cubic-bezier(1,0,0,1) infinite;  
+}
+
+p{  color:rgb(156, 199, 161);
+    background: darkcyan}
+
+.blinking{
+     animation:blinkingText 5s infinite;
+}
+/* Blinking Funktionalität von Stack Overflow übernommen*/
+@keyframes blinkingText{
+    0%{     color: magenta;    }
+    49%{    color: #000; }
+    60%{    color: yellow; }
+    99%{    color:yellowgreen;  }
+    100%{   color: magenta;    }
+    }
+
+@-webkit-keyframes background {
+    0% { background-color: #f99; }
+    33% { background-color: #9f9; }  
+    67% { background-color: #99f; }
+    100% { background-color: #f99; }
+    }
+
+@keyframes background {
+    0% { background-color: magenta; }
+    33% { background-color: lightyellow; }  
+    67% { background-color: lightblue; }
+    100% { background-color: darkred; }
+    }
+
